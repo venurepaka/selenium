@@ -13,7 +13,8 @@ public class Assignment3 {
 		
 		driver.findElement(By.linkText("Nested Frames")).click();
 		
-//		driver.switchTo().frame(driver.findElement(By.cssSelector("frame[name=frame-top]")));
+//		driver.switchTo().frame(driver.findElement(By.cssSelector("frame[name=frame-top]")));//uncomment this to make it work.
+//		first you ened to go to parent frame, then child frame under it.
 		driver.switchTo().frame(driver.findElement(By.cssSelector("frame[name=frame-middle]")));
 		System.out.println(driver.findElement(By.cssSelector("div#content")).getText());
 		
