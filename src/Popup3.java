@@ -12,7 +12,7 @@ public class Popup3 {
 		try {
 			
 		driver.get("https://www.qaclickacademy.com");
-		WebDriverWait wait=new WebDriverWait(driver, 1000);
+		WebDriverWait wait=new WebDriverWait(driver, 20000000);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='NO THANKS']")));
 		driver.findElement(By.xpath("//button[text()='NO THANKS']")).click();
 		driver.findElement(By.cssSelector("a[href*='sign_in']")).click();
